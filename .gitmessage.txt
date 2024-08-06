@@ -1,0 +1,21 @@
+################
+# TS-KIT GIT MESSAGE TEMPLATE
+# [Commit Type Options]
+# FEAT : Add a new feature
+# FIX : Fix a bug
+# DOCS : Update documentation
+# TEST : Add or update tests
+# REFACT : Refactor code
+# STYLE : Changes that do not affect the meaning of the code
+# CHORE : Everything
+################
+
+# Write the title in the format <type>(issue) : <title>" in the line below
+# For example: ✨ feat(KeyOf) : Add KeyOf ...
+#✨ FEAT   : 
+#🐛 FIX    : 
+#📝 DOCS   : 
+#✅ TEST   :
+#♻️ REFACT : 
+#💄 STYLE  :
+#🔧 CHORE  : 
