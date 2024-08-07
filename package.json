@@ -6,13 +6,15 @@
   "packageManager": "yarn@4.4.0",
   "devDependencies": {
     "prettier": "^3.3.3",
+    "release-it": "^17.6.0",
     "tsd": "^0.31.1",
     "typescript": "5"
   },
   "scripts": {
     "format": "prettier ./source --write",
     "test:tsc": "tsc",
-    "test:tsd": "tsd"
+    "test:tsd": "tsd",
+    "release": "release-it"
   },
   "keywords": [
     "typescript",
@@ -20,5 +22,8 @@
     "tsd",
     "types"
   ],
-  "types": "./index.d.ts"
+  "types": "./index.d.ts",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
 }
