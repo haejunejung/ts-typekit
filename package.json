@@ -10,6 +10,7 @@
     "typescript": "5"
   },
   "scripts": {
+    "format": "prettier ./source --write",
     "test:tsc": "tsc",
     "test:tsd": "tsd"
   },
