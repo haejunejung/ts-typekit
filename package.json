@@ -1,0 +1,23 @@
+{
+  "name": "ts-kit",
+  "version": "0.0.0",
+  "description": "A Collection of TypeScript Utility Types",
+  "license": "MIT",
+  "packageManager": "yarn@4.4.0",
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "tsd": "^0.31.1",
+    "typescript": "5"
+  },
+  "scripts": {
+    "test:tsc": "tsc",
+    "test:tsd": "tsd"
+  },
+  "keywords": [
+    "typescript",
+    "ts",
+    "tsd",
+    "types"
+  ],
+  "types": "./index.d.ts"
+}
