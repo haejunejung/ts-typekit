@@ -9,7 +9,7 @@
                 <a href="https://github.com/haejunejung">
                     <img src="https://avatars.githubusercontent.com/u/99087502?v=4" width="50;" alt="haejunejung"/>
                     <br />
-                    <sub><b>정해준</b></sub>
+                    <sub><b>haejunejung</b></sub>
                 </a>
             </td>
 		</tr>
