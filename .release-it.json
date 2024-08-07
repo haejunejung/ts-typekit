@@ -4,7 +4,8 @@
     "commitMessage": "chore : release v${version}"
   },
   "hooks": {
-    "before:init": ["git pull", "npm run format", "npm run test:tsd"]
+    "before:init": ["git pull", "npm run format", "npm run test:tsd"],
+    "after:bump": "npx auto-changelog -p"
   },
   "github": {
     "release": true
