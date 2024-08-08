@@ -1,8 +1,8 @@
-import { expectAssignable, expectNotAssignable } from "tsd";
-import { Primitive } from "../source/Primitive";
+import { expectAssignable, expectNotAssignable } from 'tsd';
+import { Primitive } from '@/basic/Primitive';
 
 // Valid cases where `Primitive` should be assignable
-expectAssignable<Primitive>("string");
+expectAssignable<Primitive>('string');
 expectAssignable<Primitive>(1);
 expectAssignable<Primitive>(true);
 expectAssignable<Primitive>(9007199254740991n);
@@ -14,7 +14,7 @@ expectAssignable<Primitive>(undefined);
 expectNotAssignable<Primitive>({});
 expectNotAssignable<Primitive>([]);
 expectNotAssignable<Primitive>(new Date());
-expectNotAssignable<Primitive>(function() {});
+expectNotAssignable<Primitive>(function () {});
 expectNotAssignable<Primitive>(/regex/);
 expectNotAssignable<Primitive>(new Map());
 expectNotAssignable<Primitive>(new Set());
