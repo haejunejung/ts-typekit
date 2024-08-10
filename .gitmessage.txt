@@ -12,10 +12,10 @@
 
 # Write the title in the format <type>(issue) : <title>" in the line below
 # For example: ✨ feat(KeyOf) : Add KeyOf ...
-#✨ FEAT   : 
-#🐛 FIX    : 
-#📝 DOCS   : 
-#✅ TEST   :
-#♻️ REFACT : 
-#💄 STYLE  :
-#🔧 CHORE  : 
+# FEAT   : 
+# FIX    : 
+# DOCS   : 
+# TEST   :
+# REFACT : 
+# STYLE  :
+# CHORE  : 
