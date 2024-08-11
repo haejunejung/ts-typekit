@@ -35,7 +35,8 @@ export default defineConfig({
               { text: 'NoInfer', link: '/ko/reference/built-in/NoInfer' },
               { text: 'NonNullable', link: '/ko/reference/built-in/NonNullable' },
               { text: 'Omit', link: '/ko/reference/built-in/Omit' },
-              { text: 'Partial', link: '/ko/reference/built-in/Partial' }
+              { text: 'Partial', link: '/ko/reference/built-in/Partial' },
+              { text: 'Required', link: '/ko/reference/built-in/Required' }
             ]
           },
           {
