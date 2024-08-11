@@ -4,3 +4,4 @@ esm
 .junit
 out
 *.tgz
+docs
