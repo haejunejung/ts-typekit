@@ -1,1 +1,1 @@
-export type { Primitive } from "./source/Primitive"
+export * from './source';
