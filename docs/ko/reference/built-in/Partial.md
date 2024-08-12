@@ -28,7 +28,7 @@ interface User {
     age: number;
 };
 
-interface PartialUser extends Partial<User> {};
+type PartialUser = Partial<User>;
 // PartialUser 인터페이스는 아래와 같아요.
 // interface PartialUser {
 //     name?: string;

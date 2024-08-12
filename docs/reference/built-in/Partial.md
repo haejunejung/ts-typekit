@@ -26,7 +26,7 @@ interface User {
     age: number;
 };
 
-interface PartialUser extends Partial<User> {};
+type PartialUser = Partial<User>;
 // This PartialUser interface is equivalent to the following:
 // interface PartialUser {
 //     name?: string;

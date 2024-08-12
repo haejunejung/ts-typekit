@@ -52,7 +52,8 @@ interface SignUpForm {
     confirmPassword?: string;
 };
 
-interface RequiredSignUpForm extends Required<SignUpForm> {};
+type RequiredSignUpForm = Required<SignUpForm>;
+
 
 function validateSignUpForm (signUpData: RequiredSignUpForm): boolean {
     const requiredFields = ["username", "email", "password", "confirmPassword"];
