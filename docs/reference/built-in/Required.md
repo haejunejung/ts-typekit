@@ -10,17 +10,15 @@ The `Required<Type>` utility type is available starting from TypeScript version 
 
 ## Syntax
 
-`Required<Type>` taks a single type paramter, `Type`, which represents the type whose properties you want to make required.
-
 ```ts
-type NewType = Required<Type>;
+type Required<T> = { [K in keyof T]-?: T[K] };
 ```
+
+- **Type (T)**: The type whose properties you want to make required.
 
 ## Examples
 
-
 #### Exmaple #1
-
 
 ```ts
 interface Props {

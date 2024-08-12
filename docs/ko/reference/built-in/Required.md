@@ -11,17 +11,15 @@
 
 ## 문법
 
-`Required<Type>`은 `Type`을 하나의 파라미터로 받으며, 이 매개변수는 필수적으로 만들고자 하는 속성을 가진 타입을 나타내요.
-
 ```ts
-type NewType = Required<Type>;
+type Required<T> = { [K in keyof T]-?: T[K] };
 ```
+
+- **Type (T)**: 필수적으로 만들고자 하는 속성을 가진 타입을 나타내요.
 
 ## 예제
 
-
 #### 예제 #1
-
 
 ```ts
 interface Props {
