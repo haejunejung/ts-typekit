@@ -10,13 +10,11 @@
 
 ## 문법
 
-`Readonly<Type>`은 `Type`을 하나의 파라미터로 받으며, 이 매개변수는 읽기 속성으로 변경하고자 하는 타입을 나태내요.
-
-
 ```ts
-type ReadonlyProps = Readonly<Props>;
-
+type Readonly<T> = { readonly [K in keyof T]: T[K] };
 ```
+
+- **Type (T)**: 읽기 속성으로 변경하고자 하는 타입이에요.
 
 ## 예제
 

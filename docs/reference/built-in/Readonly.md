@@ -10,12 +10,11 @@ The `Readonly<Type>` utility type is available starting from TypeScript version 
 
 ## Syntax
 
-`Readonlt<Type>` takes a single type parameter, `Type`, which represents the type whose properties you want to make read-only.
-
 ```ts
-type ReadonlyProps = Readonly<Props>;
-
+type Readonly<T> = { readonly [K in keyof T]: T[K] };
 ```
+
+- **Type (T)**: The type whose properties you want to make read-only.
 
 ## Examples
 
