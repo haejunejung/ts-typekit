@@ -11,11 +11,11 @@
 
 ## 문법
 
-`Partial<Type>`은 `Type`을 하나의 파라미터로 받으며, 이 매개변수는 선택적으로 만들고자 하는 속성을 가진 타입을 나타내요.
-
 ```ts
-type NewType = Partial<Type>;
+type Partial<T> = { [K in keyof T]?: T[K] | undefined };
 ```
+
+- **Type (T)**: 선택적으로 만들고자 하는 속성을 가진 타입이에요.
 
 ## 예제
 

@@ -10,11 +10,11 @@ The `Partial<Type>` utility type is available starting from TypeScript version 2
 
 ## Syntax
 
-`Partial<Type>` takes a single type paramter, `Type`, which represents the type whose properties you want to make optional.
-
 ```ts
-type PartialNewType = Partial<Type>;
+type Partial<T> = { [K in keyof T]?: T[K] | undefined };
 ```
+
+- **Type (T)**: The type whose properties you want to make optional.
 
 ## Examples
 
