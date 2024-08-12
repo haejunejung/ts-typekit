@@ -12,11 +12,10 @@ The `Omit<Type, Keys>` contructs a type by picking all properties from `Type` an
 
 ```ts
 type Omit<T, K extends keyof any> = { [P in keyof Exclude<keyof T, K>]: T[P]; }
-// it is equivalent to Omit<Type, Keys>
 ```
 
-- **Type**: The original type that has the properties you want to omit.
-- **Keys**: A union of the property names you want to omit.
+- **Type (T)**: The original type from which you want to omit some properties. This is the type that contains the properties you are interested in modifying.
+- **Keys (K)**: A union of the property names that you want to exclude from the original type. These are the property names that you want to remove from the original type.
 
 ## Examples
 
