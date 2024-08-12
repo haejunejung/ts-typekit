@@ -10,13 +10,12 @@ The `Pick<Type, Keys>` utility type is available starting from TypeScript versio
 
 ## Syntax
 
-`Pick<Type, Keys>` takes two parameters `Type` and `Keys`.
-- **Type**: This is the existing type from which you want to pick specific properties.
-- **Keys**: This is a union of string literal types representing the keys of the properties you want to pick from the Type. The keys are combined using the pipe symbol.
+```ts
+type Pick<T, K extends keyof T> = { [P in K]: T[P] };
+```
 
-```
-Pick<Type, Keys>;
-```
+- **Type (T)**: This is the existing type from which you want to pick specific properties.
+- **Keys (K)**: This is a union of string literal types representing the keys of the properties you want to pick from the Type. The keys are combined using the pipe(|) symbol.
 
 ## Examples
 
