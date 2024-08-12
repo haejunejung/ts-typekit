@@ -10,13 +10,12 @@
 
 ## 문법
 
-`Record<Keys, Type>`은 `Keys`와 `Type` 두 개의 매개변수를 사용해요.
-- **Keys**: 객체의 키로 사용할 타입이에요.
-- **Type**: 객체의 값으로 사용할 타입이에요.
-
 ```ts
-Record<Keys, Type>;
+type Record<K extends keyof any, T> = { [P in K]: T };
 ```
+
+- **Keys (K)**: 객체의 키로 사용할 타입이에요.
+- **Type (T)**: 객체의 값으로 사용할 타입이에요.
 
 ## 예제
 
