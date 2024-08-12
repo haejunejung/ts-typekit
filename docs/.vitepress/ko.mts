@@ -37,6 +37,7 @@ export default defineConfig({
               { text: 'Omit', link: '/ko/reference/built-in/Omit' },
               { text: 'Partial', link: '/ko/reference/built-in/Partial' },
               { text: 'Readonly', link: '/ko/reference/built-in/Readonly' },
+              { text: 'Record', link: '/ko/reference/built-in/Record' },
               { text: 'Required', link: '/ko/reference/built-in/Required' }
             ]
           },

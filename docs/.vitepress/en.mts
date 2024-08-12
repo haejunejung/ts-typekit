@@ -37,6 +37,7 @@ export default defineConfig({
               { text: 'Omit', link: '/reference/built-in/Omit' },
               { text: 'Partial', link: '/reference/built-in/Partial' },
               { text: 'Readonly', link: '/reference/built-in/Readonly' },
+              { text: 'Record', link: '/reference/built-in/Record' },
               { text: 'Required', link: '/reference/built-in/Required' }
             ],
           },
