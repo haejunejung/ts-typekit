@@ -22,16 +22,16 @@ type Readonly<T> = { readonly [K in keyof T]: T[K] };
 
 ```ts
 interface Person {
-    name: string;
-    age: number;
-};
+  name: string;
+  age: number;
+}
 
 const user: Readonly<User> = {
-    name: "John",
-    age: 30,
+  name: 'John',
+  age: 30,
 };
 
-user.name = "Andew";
+user.name = 'Andew';
 // Error
 // Cannot assign to 'name' because it is a read-only property.
 ```
@@ -40,8 +40,8 @@ user.name = "Andew";
 
 ```ts
 interface AppConfig {
-    apiUrl: string;
-    version: string;
+  apiUrl: string;
+  version: string;
 }
 
 // 애플리케이션 전역에서 사용되는 객체 구성 객체예요.
@@ -50,34 +50,32 @@ interface AppConfig {
 //       - config.apiUrl = "https://api.changeurl.com"
 //       - config.version = "1.0.1"
 const config: Readonly<AppConfig> = {
-    apiUrl: 'https://api.example.com',
-    version: '1.0.0',
+  apiUrl: 'https://api.example.com',
+  version: '1.0.0',
 };
 
-type Method = "GET" | "POST" | "PUT" | "DELETE";
+type Method = 'GET' | 'POST' | 'PUT' | 'DELETE';
 
-async function fetchData <TRequest, TResponse>(
-    endPoint: string, method: Method, data?: TRequest
-): Promise<TResponse> {
-    const options = {
-        method: method,
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: data ? JSON.stringify(data) : undefined
-    };
+async function fetchData<TRequest, TResponse>(endPoint: string, method: Method, data?: TRequest): Promise<TResponse> {
+  const options = {
+    method: method,
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: data ? JSON.stringify(data) : undefined,
+  };
 
-    try {
-        const response = await fetch(`${config.apiUrl}/${endPoint}`, options);
-        
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-        }
+  try {
+    const response = await fetch(`${config.apiUrl}/${endPoint}`, options);
 
-        return await response.json() as TResponse;
-    } catch (error) {
-        console.error('Fetch error', error);
-        throw error;
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
     }
+
+    return (await response.json()) as TResponse;
+  } catch (error) {
+    console.error('Fetch error', error);
+    throw error;
+  }
 }
 ```

@@ -18,9 +18,7 @@ type NewType = Awaited<Type>;
 
 ## 예제
 
-
 #### 예제 #1
-
 
 ```ts
 type A = Awaited<Promise<string>>;

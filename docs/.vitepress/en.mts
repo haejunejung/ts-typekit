@@ -39,7 +39,7 @@ export default defineConfig({
               { text: 'Pick', link: '/reference/built-in/Pick' },
               { text: 'Readonly', link: '/reference/built-in/Readonly' },
               { text: 'Record', link: '/reference/built-in/Record' },
-              { text: 'Required', link: '/reference/built-in/Required' }
+              { text: 'Required', link: '/reference/built-in/Required' },
             ],
           },
           {

@@ -11,7 +11,7 @@
 ## 문법
 
 ```ts
-type Omit <T, K extends keyof T> = { [P in Exclude<keyof T, K>]: T[P] };
+type Omit<T, K extends keyof T> = { [P in Exclude<keyof T, K>]: T[P] };
 ```
 
 - **Type (T)**: 원본 타입으로, 여기서 일부 속성을 제거하고자 하는 타입이에요. 이 타입에는 수정할 속성들이 포함되어 있어요.
@@ -23,12 +23,12 @@ type Omit <T, K extends keyof T> = { [P in Exclude<keyof T, K>]: T[P] };
 
 ```ts
 interface Thumbnail {
-    image: string;
-    title: string;
-    description: string;
-    author: string;
-    tags: string[];
-    details: string[];
+  image: string;
+  title: string;
+  description: string;
+  author: string;
+  tags: string[];
+  details: string[];
 }
 
 type ThumbnailPreview = Omit<Thumbnail, 'details'>;
@@ -45,52 +45,49 @@ type ThumbnailPreview = Omit<Thumbnail, 'details'>;
 #### 예제 #2
 
 ```ts
-function omit<T extends Record<PropertyKey, any>, K extends keyof T> (
-    obj: T,
-    keys: K[]
-): Omit<T, K> {
-    const reslt = {...obj};
+function omit<T extends Record<PropertyKey, any>, K extends keyof T>(obj: T, keys: K[]): Omit<T, K> {
+  const reslt = { ...obj };
 
-    for (const key of keys) {
-        delete result[key];
-    }
+  for (const key of keys) {
+    delete result[key];
+  }
 
-    return result as Omit<T, K>;
+  return result as Omit<T, K>;
 }
 ```
 
 #### 예제 #3
 
 ```ts
-interface ApiResponse<T>{
-    status: number;
-    data: T;
-    error?: string;
+interface ApiResponse<T> {
+  status: number;
+  data: T;
+  error?: string;
 }
 
 type Payload<T> = Omit<ApiResponse<T>, 'status' | 'error'>;
 
 interface User {
-    id: string;
-    name: string;
-    email: string;
+  id: string;
+  name: string;
+  email: string;
 }
 
-async function fetchUser (userId: string): Promise<Payload<User>> {
-    try {
-        const response = await fetch(`/api/users/${userId}`);
-        const apiResponse: ApiResponse<User> = await response.json();
+async function fetchUser(userId: string): Promise<Payload<User>> {
+  try {
+    const response = await fetch(`/api/users/${userId}`);
+    const apiResponse: ApiResponse<User> = await response.json();
 
-        if (apiResponse.status === 200) {
-            return {
-                data: apiResponse.data
-            };
-        } else {
-            throw new Error('Failed to fetch user data');
-        }
-    } catch (error) {
-        console.error('Error fetching user:', error);
-        throw error;
+    if (apiResponse.status === 200) {
+      return {
+        data: apiResponse.data,
+      };
+    } else {
+      throw new Error('Failed to fetch user data');
     }
+  } catch (error) {
+    console.error('Error fetching user:', error);
+    throw error;
+  }
 }
 ```

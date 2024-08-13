@@ -22,9 +22,9 @@ type Partial<T> = { [K in keyof T]?: T[K] | undefined };
 
 ```ts
 interface User {
-    name: string;
-    age: number;
-};
+  name: string;
+  age: number;
+}
 
 type PartialUser = Partial<User>;
 // This PartialUser interface is equivalent to the following:
@@ -34,26 +34,25 @@ type PartialUser = Partial<User>;
 // }
 ```
 
-
 #### Example #2
 
 ```ts
 interface Todo {
-    title: string;
-    description: string;
+  title: string;
+  description: string;
 }
 
-function updateTodo (todo: Todo, fieldsToUpdate: Partial<Todo>) {
-    return {...todo, ...fieldsToUpdate };
+function updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {
+  return { ...todo, ...fieldsToUpdate };
 }
 
 const todo1 = {
-    title: "organize desk",
-    description: "clear clutter",
+  title: 'organize desk',
+  description: 'clear clutter',
 };
 
 const todo2 = updateTodo(todo1, {
-    description: "throw out trash",
+  description: 'throw out trash',
 });
 ```
 
@@ -61,28 +60,28 @@ const todo2 = updateTodo(todo1, {
 
 ```ts
 interface Book {
-    title: string;
-    description: string;
-    price: number;
+  title: string;
+  description: string;
+  price: number;
 }
 
 interface IBookApiService {
-	create (book: Book): Promise<string>;
-	update (bookId: string, updates: Partial<Book>): Promise<void>;
-	getBookById (bookId: string): Promise<Book | null>;
-};
+  create(book: Book): Promise<string>;
+  update(bookId: string, updates: Partial<Book>): Promise<void>;
+  getBookById(bookId: string): Promise<Book | null>;
+}
 
 class BookApiService implements IBookApiService {
-	async create (book: Book): Promise<string> {
-		// Implementation will create book.	
-	}
+  async create(book: Book): Promise<string> {
+    // Implementation will create book.
+  }
 
-	async update (bookId: string, updates: Partial<Book>): Promise<void> {
-		// Implementation will update the book with the given ID.
-	}
+  async update(bookId: string, updates: Partial<Book>): Promise<void> {
+    // Implementation will update the book with the given ID.
+  }
 
-	async getBookById (bookId: string): Promise<Book | null> {
-		// Implementation will return a book or null if not found.
-	}
+  async getBookById(bookId: string): Promise<Book | null> {
+    // Implementation will return a book or null if not found.
+  }
 }
 ```

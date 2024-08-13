@@ -26,75 +26,69 @@ Record<Keys, Type>;
 #### Example #1
 
 ```ts
-type CatName = "miffy" | "boris" | "mordred";
+type CatName = 'miffy' | 'boris' | 'mordred';
 
 interface CatInfo {
-    age: number;
-    breed: string;
+  age: number;
+  breed: string;
 }
 
 const cats: Record<CatName, CatInfo> = {
-    miffy: {age: 10, breed: "Persian"},
-    boris: {age: 5, breed: "Maine Coon"},
-    mordred: {age: 16, breed: "British Shorthair"}
-}
+  miffy: { age: 10, breed: 'Persian' },
+  boris: { age: 5, breed: 'Maine Coon' },
+  mordred: { age: 16, breed: 'British Shorthair' },
+};
 ```
 
 #### Example #2
 
 ```ts
-function mapObject <K extends string, T, U> (
-    obj: Record<K, T>,
-    f: (x: T) => U
-): Record<K, U>;
+function mapObject<K extends string, T, U>(obj: Record<K, T>, f: (x: T) => U): Record<K, U>;
 
 const names = { foo: 'hello', bar: 'world', baz: 'bye' };
-const lengths = mapObject (names, s => s.length) // { foo: number, bar: number, baz: number }
+const lengths = mapObject(names, s => s.length); // { foo: number, bar: number, baz: number }
 ```
 
 #### Example #3
 
 ```ts
-function groupBy <T, K extends PropertyKey>(
-    items: readonly T[],
-    callbackFn: (item: T) => K
-): Record<K, T[]> {
-    const group = {} as Record<K, T[]>;
+function groupBy<T, K extends PropertyKey>(items: readonly T[], callbackFn: (item: T) => K): Record<K, T[]> {
+  const group = {} as Record<K, T[]>;
 
-    for (const item of items) {
-        const key = callbackFn(item);
+  for (const item of items) {
+    const key = callbackFn(item);
 
-        if (!(key in group)) {
-            group[key] = [];
-        }
-
-        group[key].push(item);
+    if (!(key in group)) {
+      group[key] = [];
     }
 
-    return group;
+    group[key].push(item);
+  }
+
+  return group;
 }
 ```
 
 #### Example #4
 
 ```ts
-type Team = "frontEnd" | "backEnd" | "devops"
+type Team = 'frontEnd' | 'backEnd' | 'devops';
 
 interface Employee {
-    name: string;
-    age: number;
-    hobby: string[];
+  name: string;
+  age: number;
+  hobby: string[];
 }
 
 const team: Record<Team, Employee[]> = {
-    frontEnd: [],
-    backEnd: [],
-    devops: [],
+  frontEnd: [],
+  backEnd: [],
+  devops: [],
 };
 
 team.frontEnd.push({
-    name: "Ky",
-    age: 30,
-    hobby: ["hiking", "football"]
-})
+  name: 'Ky',
+  age: 30,
+  hobby: ['hiking', 'football'],
+});
 ```

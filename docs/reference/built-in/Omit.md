@@ -11,7 +11,7 @@ The `Omit<Type, Keys>` contructs a type by picking all properties from `Type` an
 ## Syntax
 
 ```ts
-type Omit<T, K extends keyof any> = { [P in keyof Exclude<keyof T, K>]: T[P]; }
+type Omit<T, K extends keyof any> = { [P in keyof Exclude<keyof T, K>]: T[P] };
 ```
 
 - **Type (T)**: The original type from which you want to omit some properties. This is the type that contains the properties you are interested in modifying.
@@ -23,16 +23,16 @@ type Omit<T, K extends keyof any> = { [P in keyof Exclude<keyof T, K>]: T[P]; }
 
 ```ts
 interface Thumbnail {
-    image: string;
-    title: string;
-    description: string;
-    author: string;
-    tags: string[];
-    details: string[];
+  image: string;
+  title: string;
+  description: string;
+  author: string;
+  tags: string[];
+  details: string[];
 }
 
 type ThumbnailPreview = Omit<Thumbnail, 'details'>;
-// it is equivalent to 
+// it is equivalent to
 // type ThumbnailPreview = {
 //     image: string;
 //     title: string;
@@ -45,52 +45,49 @@ type ThumbnailPreview = Omit<Thumbnail, 'details'>;
 #### Example #2
 
 ```ts
-function omit<T extends Record<PropertyKey, any>, K extends keyof T> (
-    obj: T,
-    keys: K[]
-): Omit<T, K> {
-    const reslt = {...obj};
+function omit<T extends Record<PropertyKey, any>, K extends keyof T>(obj: T, keys: K[]): Omit<T, K> {
+  const reslt = { ...obj };
 
-    for (const key of keys) {
-        delete result[key];
-    }
+  for (const key of keys) {
+    delete result[key];
+  }
 
-    return result as Omit<T, K>;
+  return result as Omit<T, K>;
 }
 ```
 
 #### Example #3
 
 ```ts
-interface ApiResponse<T>{
-    status: number;
-    data: T;
-    error?: string;
+interface ApiResponse<T> {
+  status: number;
+  data: T;
+  error?: string;
 }
 
 type Payload<T> = Omit<ApiResponse<T>, 'status' | 'error'>;
 
 interface User {
-    id: string;
-    name: string;
-    email: string;
+  id: string;
+  name: string;
+  email: string;
 }
 
-async function fetchUser (userId: string): Promise<Payload<User>> {
-    try {
-        const response = await fetch(`/api/users/${userId}`);
-        const apiResponse: ApiResponse<User> = await response.json();
+async function fetchUser(userId: string): Promise<Payload<User>> {
+  try {
+    const response = await fetch(`/api/users/${userId}`);
+    const apiResponse: ApiResponse<User> = await response.json();
 
-        if (apiResponse.status === 200) {
-            return {
-                data: apiResponse.data
-            };
-        } else {
-            throw new Error('Failed to fetch user data');
-        }
-    } catch (error) {
-        console.error('Error fetching user:', error);
-        throw error;
+    if (apiResponse.status === 200) {
+      return {
+        data: apiResponse.data,
+      };
+    } else {
+      throw new Error('Failed to fetch user data');
     }
+  } catch (error) {
+    console.error('Error fetching user:', error);
+    throw error;
+  }
 }
 ```

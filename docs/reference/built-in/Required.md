@@ -22,12 +22,12 @@ type Required<T> = { [K in keyof T]-?: T[K] };
 
 ```ts
 interface Props {
-    a?: number;
-    b?: string;
+  a?: number;
+  b?: string;
 }
 
 const obj1: Props = { a: 5 };
-const obj2: Required<Props> = { a: 5};
+const obj2: Required<Props> = { a: 5 };
 
 // Error
 // Property 'b' is missing in type '{ a: number; }'
@@ -44,30 +44,29 @@ const obj2: Required<Props> = { a: 5};
 
 ```ts
 interface SignUpForm {
-    username?: string;
-    email?: string;
-    password?: string;
-    confirmPassword?: string;
-};
+  username?: string;
+  email?: string;
+  password?: string;
+  confirmPassword?: string;
+}
 
 type RequiredSignUpForm = Required<SignUpForm>;
 
+function validateSignUpForm(signUpData: RequiredSignUpForm): boolean {
+  const requiredFields = ['username', 'email', 'password', 'confirmPassword'];
 
-function validateSignUpForm (signUpData: RequiredSignUpForm): boolean {
-    const requiredFields = ["username", "email", "password", "confirmPassword"];
-
-    for (const field of requiredFields) {
-        if (signUpData[field as keyof RequiredSignUpForm] == null) {
-            console.error(`Field ${field} is missing`);
-            return false;
-        } 
+  for (const field of requiredFields) {
+    if (signUpData[field as keyof RequiredSignUpForm] == null) {
+      console.error(`Field ${field} is missing`);
+      return false;
     }
+  }
 
-    if (signUpData.password !== signUpData.confirmPassword) {
-        console.error(`Passwords do not match`);
-        return false;
-    }
+  if (signUpData.password !== signUpData.confirmPassword) {
+    console.error(`Passwords do not match`);
+    return false;
+  }
 
-    return true;
+  return true;
 }
 ```

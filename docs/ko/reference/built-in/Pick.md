@@ -23,30 +23,30 @@ type Pick<T, K extends keyof T> = { [P in K]: T[P] };
 
 ```ts
 interface Task {
-    title: string;
-    description: string;
-    completed: boolean;
+  title: string;
+  description: string;
+  completed: boolean;
 }
 
 type TaskPreview = Pick<Task, 'title' | 'completed'>;
 
 const task: TaskPreview = {
-    title: 'Clean room',
-    completed: false
-}
+  title: 'Clean room',
+  completed: false,
+};
 ```
 
 #### 예제 #2
 
 ```ts
-function pick <T extends Record<string, any>, K extends keyof T> (obj: T, keys: K[]): Pick<T, K> {
-    const result = {} as Pick<T, K>;
+function pick<T extends Record<string, any>, K extends keyof T>(obj: T, keys: K[]): Pick<T, K> {
+  const result = {} as Pick<T, K>;
 
-    for (const key of keys) {
-        result[key] = obj[key];
-    }
+  for (const key of keys) {
+    result[key] = obj[key];
+  }
 
-    return result;
+  return result;
 }
 ```
 
@@ -54,29 +54,29 @@ function pick <T extends Record<string, any>, K extends keyof T> (obj: T, keys: 
 
 ```ts
 interface Credential {
-    name: string;
-    email: string;
-    password: string;
+  name: string;
+  email: string;
+  password: string;
 }
 
 class AuthService {
-    // 사용자 계정을 생성하기 위한 메서드예요.
-    async create ({ name, email, password }: Credential): Promise<void> {
-        // 실제 구현에서는, 
-        // 사용자의 데이터를 데이터베이스에 저장하는 로직이 들어갈 수 있어요.
-    }
+  // 사용자 계정을 생성하기 위한 메서드예요.
+  async create({ name, email, password }: Credential): Promise<void> {
+    // 실제 구현에서는,
+    // 사용자의 데이터를 데이터베이스에 저장하는 로직이 들어갈 수 있어요.
+  }
 
-    // 사용자 로그인을 위한 메서드예요.
-    async login ({ email, password }: Pick<Credential, 'email' | 'password'>): Promise<void> {
-        // 실제 구현에서는, 
-        // 이메일과 비밀번호를 통해 사용자를 인증하는 로직이 들어갈 수 있어요.
-    }
+  // 사용자 로그인을 위한 메서드예요.
+  async login({ email, password }: Pick<Credential, 'email' | 'password'>): Promise<void> {
+    // 실제 구현에서는,
+    // 이메일과 비밀번호를 통해 사용자를 인증하는 로직이 들어갈 수 있어요.
+  }
 
-    // Method to log out a user
-    async logout ({ email }: Pick<Credentail, 'email'>): Promise<void> {
-        // 실제 구현에서는,
-        // 사용자의 세션을 종료하는 로직이 들어갈 수 있어요.
-        // this would include logic to end the user session.
-    }
+  // Method to log out a user
+  async logout({ email }: Pick<Credentail, 'email'>): Promise<void> {
+    // 실제 구현에서는,
+    // 사용자의 세션을 종료하는 로직이 들어갈 수 있어요.
+    // this would include logic to end the user session.
+  }
 }
 ```

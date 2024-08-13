@@ -65,20 +65,20 @@ interface User {
 }
 
 class UserApiService {
-  async fetchUser (userId: number): Promise<User> {
+  async fetchUser(userId: number): Promise<User> {
     // Fetch the user data from the database.
     // The actual implementation might look like this:
     // const response = await fetch(`/api/user/${userId}`);
     // const data = response.json();
     // return data;
 
-    return { id: 1, name: "John Doe", age: 30 };
+    return { id: 1, name: 'John Doe', age: 30 };
   }
 }
 
-type FetchedUser = Await<ReturnType<UserApiService["fetchUser"]>>;
+type FetchedUser = Await<ReturnType<UserApiService['fetchUser']>>;
 
-async function handleUserData (apiService: UserApiService, userId: number) {
+async function handleUserData(apiService: UserApiService, userId: number) {
   try {
     const user: FetchedUser = await apiService.fetchUser(userId);
     // After fetching user data, you can perfrom various actions such as
@@ -90,5 +90,5 @@ async function handleUserData (apiService: UserApiService, userId: number) {
 }
 
 const userApiService = new UserApiService();
-handleUserData (userApiService, 1);
+handleUserData(userApiService, 1);
 ```
