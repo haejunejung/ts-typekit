@@ -41,6 +41,7 @@ export default defineConfig({
               { text: 'Readonly', link: '/ko/reference/built-in/Readonly' },
               { text: 'Record', link: '/ko/reference/built-in/Record' },
               { text: 'Required', link: '/ko/reference/built-in/Required' },
+              { text: 'ReturnType', link: '/ko/reference/built-in/ReturnType' },
             ],
           },
           {

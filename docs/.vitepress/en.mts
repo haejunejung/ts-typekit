@@ -41,6 +41,7 @@ export default defineConfig({
               { text: 'Readonly', link: '/reference/built-in/Readonly' },
               { text: 'Record', link: '/reference/built-in/Record' },
               { text: 'Required', link: '/reference/built-in/Required' },
+              { text: 'ReturnType', link: '/reference/built-in/ReturnType' },
             ],
           },
           {
