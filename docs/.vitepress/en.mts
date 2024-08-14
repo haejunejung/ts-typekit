@@ -35,6 +35,7 @@ export default defineConfig({
               { text: 'NoInfer', link: '/reference/built-in/NoInfer' },
               { text: 'NonNullable', link: '/reference/built-in/NonNullable' },
               { text: 'Omit', link: '/reference/built-in/Omit' },
+              { text: 'Parameters', link: '/reference/built-in/Parameters' },
               { text: 'Partial', link: '/reference/built-in/Partial' },
               { text: 'Pick', link: '/reference/built-in/Pick' },
               { text: 'Readonly', link: '/reference/built-in/Readonly' },
