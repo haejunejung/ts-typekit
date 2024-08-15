@@ -1,7 +1,7 @@
 # Capitalize\<StringType>
 
 :::info
-`Capitalize\<StringType>`은 TypeScript 2.8 이상에서 사용할 수 있는 내장 유틸리티 타입이에요. 자세한 내용은 [타입스크립트 핸드북](https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html#uppercasestringtype)과 [릴리즈 노트](https://devblogs.microsoft.com/typescript/announcing-typescript-4-1/)를 참고해주세요.
+`Capitalize\<StringType>`은 TypeScript 4.1 이상에서 사용할 수 있는 내장 유틸리티 타입이에요. 자세한 내용은 [타입스크립트 핸드북](https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html#uppercasestringtype)과 [릴리즈 노트](https://devblogs.microsoft.com/typescript/announcing-typescript-4-1/)를 참고해주세요.
 :::
 
 ## 개요
