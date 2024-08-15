@@ -48,7 +48,10 @@ export default defineConfig({
           },
           {
             text: 'Basic',
-            items: [{ text: 'Primitive', link: '/ko/reference/basic/Primitive' }],
+            items: [
+              { text: 'Falsy', link: '/ko/reference/basic/Falsy' },
+              { text: 'Primitive', link: '/ko/reference/basic/Primitive' },
+            ],
           },
         ],
       },

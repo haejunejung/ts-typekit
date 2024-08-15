@@ -48,7 +48,10 @@ export default defineConfig({
           },
           {
             text: 'Basic',
-            items: [{ text: 'Primitive', link: '/reference/basic/Primitive' }],
+            items: [
+              { text: 'Falsy', link: '/reference/basic/Falsy' },
+              { text: 'Primitive', link: '/reference/basic/Primitive' },
+            ],
           },
         ],
       },
