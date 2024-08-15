@@ -23,6 +23,9 @@ type Capitalize<S extends string> = S extends `${inter F}${inter Rest}` ? `${Upp
 ```ts
 type LowercaseGreeting = 'hello, world';
 type Greeting = Capitalize<LowercaseGreeting>; // 'Hello, world'
+
+type CamelCase = 'camelCase';
+type PascalCase = Capitalize<CamelCase>; // 'CamelCase'
 ```
 
 #### Example #2
