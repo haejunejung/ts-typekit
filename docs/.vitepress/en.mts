@@ -42,6 +42,7 @@ export default defineConfig({
               { text: 'Record', link: '/reference/built-in/Record' },
               { text: 'Required', link: '/reference/built-in/Required' },
               { text: 'ReturnType', link: '/reference/built-in/ReturnType' },
+              { text: 'Uncapitalize', link: '/reference/built-in/Uncapitalize' },
             ],
           },
           {

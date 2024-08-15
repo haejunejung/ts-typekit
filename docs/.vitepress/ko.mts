@@ -42,6 +42,7 @@ export default defineConfig({
               { text: 'Record', link: '/ko/reference/built-in/Record' },
               { text: 'Required', link: '/ko/reference/built-in/Required' },
               { text: 'ReturnType', link: '/ko/reference/built-in/ReturnType' },
+              { text: 'Uncapitalize', link: '/ko/reference/built-in/Uncapitalize' },
             ],
           },
           {
