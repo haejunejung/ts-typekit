@@ -31,6 +31,7 @@
     "registry": "https://registry.npmjs.org"
   },
   "files": [
-    "source"
+    "source",
+    "index.d.ts"
   ]
 }
