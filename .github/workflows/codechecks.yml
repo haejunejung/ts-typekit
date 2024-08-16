@@ -1,7 +1,7 @@
 name: 'codechecks'
 on:
   pull_request:
-    types: [opened, ready_for_review]
+    types: [opened, ready_for_review, synchronize, reopened]
     branches:
       - 'main'
 
@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: yarn
         run: |
-          yarn install --frozen-lockfile
+          yarn install --immutable
           npx codechecks
         env:
           CC_SECRET: ${{ secrets.CC_SECRET }}
