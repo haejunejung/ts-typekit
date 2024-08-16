@@ -1,0 +1,6 @@
+checks:
+  - name: typecov
+    options:
+      tsconfigPath: './tsconfig.json'
+      atLeast: 100
+      strict: true

@@ -1,0 +1,19 @@
+name: 'codechecks'
+on:
+  pull_request:
+    types: [opened, ready_for_review]
+    branches:
+      - 'main'
+
+jobs:
+  build-and-codecheckes:
+    name: build and run codechecks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: yarn
+        run: |
+          yarn install --frozen-lockfile
+          npx codechecks
+        env:
+          CC_SECRET: ${{ secrets.CC_SECRET }}
