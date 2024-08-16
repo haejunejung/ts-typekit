@@ -4,6 +4,12 @@
   "description": "A Collection of TypeScript Utility Types",
   "license": "MIT",
   "packageManager": "yarn@4.4.0",
+  "workspaces": {
+    "packages": [
+      "docs",
+      "source"
+    ]
+  },
   "devDependencies": {
     "prettier": "^3.3.3",
     "release-it": "^17.6.0",
@@ -16,9 +22,7 @@
     "test:tsc": "tsc",
     "test:tsd": "tsd",
     "release": "release-it",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs": "yarn workspace docs run docs:dev"
   },
   "keywords": [
     "typescript",
