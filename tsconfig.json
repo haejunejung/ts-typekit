@@ -20,5 +20,6 @@
     "noFallthroughCasesInSwitch": true,
     "noPropertyAccessFromIndexSignature": true,
     "useDefineForClassFields": true
-  }
+  },
+  "include": ["source/**/*.d.ts"]
 }

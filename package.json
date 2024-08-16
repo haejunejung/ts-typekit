@@ -14,6 +14,7 @@
     "prettier": "^3.3.3",
     "release-it": "^17.6.0",
     "tsd": "^0.31.1",
+    "type-coverage": "^2.29.1",
     "typescript": "^5.5.4",
     "vitepress": "^1.3.2"
   },
@@ -21,8 +22,10 @@
     "format": "prettier ./source --write",
     "test:tsc": "tsc",
     "test:tsd": "tsd",
+    "test:coverage": "yarn run type-coverage",
     "release": "release-it",
-    "docs": "yarn workspace docs run docs:dev"
+    "docs": "yarn workspace docs run docs:dev",
+    "type-coverage": "npx type-coverage"
   },
   "keywords": [
     "typescript",
@@ -37,5 +40,10 @@
   "files": [
     "source",
     "index.d.ts"
-  ]
+  ],
+  "typeCoverage": {
+    "atLeast": 99,
+    "project": "tsconfig.json",
+    "strict": true
+  }
 }
