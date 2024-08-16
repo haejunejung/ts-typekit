@@ -4,3 +4,10 @@ checks:
       tsconfigPath: './tsconfig.json'
       atLeast: 100
       strict: true
+
+  - name: build-size-watcher
+    options:
+      name: 'Build size (types)'
+      gzip: false
+      files:
+        - path: './source/**/*.d.ts'
