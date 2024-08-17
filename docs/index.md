@@ -13,10 +13,18 @@ hero:
       link: /reference/built-in/Awaited
 
 features:
-  - title: No runtime cost
+  - icon:
+      src: /assets/no-runtime-cost.png
+    title: No runtime cost
     details: ts-typekit exists only at compile-time, no impact on runtime performance.
-  - title: Battle-tested
+
+  - icon:
+      src: /assets/battle-tested.png
+    title: Battle-tested
     details: ts-typekit verified and tested with `tsd` for reliability.
-  - title: Type Safety
+
+  - icon:
+      src: /assets/type-safety.png
+    title: Type Safety
     details: ty-typekit ensures correctness and prevents type errors in TypeScript code.
 ---
