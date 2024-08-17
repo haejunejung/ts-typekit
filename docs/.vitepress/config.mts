@@ -15,4 +15,5 @@ export default defineConfig({
       { icon: 'npm', link: 'https://www.npmjs.com/package/ts-typekit' },
     ],
   },
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
 });
