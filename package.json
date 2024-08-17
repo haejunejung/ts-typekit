@@ -7,7 +7,8 @@
   "workspaces": {
     "packages": [
       "docs",
-      "source"
+      "source",
+      "test-d"
     ]
   },
   "devDependencies": {

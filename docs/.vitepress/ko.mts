@@ -27,13 +27,22 @@ export default defineConfig({
             items: [
               { text: 'Awaited', link: '/ko/reference/built-in/Awaited' },
               { text: 'Capitalize', link: '/ko/reference/built-in/Capitalize' },
-              { text: 'ConstructorParameters', link: '/ko/reference/built-in/ConstructorParameters' },
+              {
+                text: 'ConstructorParameters',
+                link: '/ko/reference/built-in/ConstructorParameters',
+              },
               { text: 'Exclude', link: '/ko/reference/built-in/Exclude' },
               { text: 'Extract', link: '/ko/reference/built-in/Extract' },
-              { text: 'InstanceType', link: '/ko/reference/built-in/InstanceType' },
+              {
+                text: 'InstanceType',
+                link: '/ko/reference/built-in/InstanceType',
+              },
               { text: 'Lowercase', link: '/ko/reference/built-in/Lowercase' },
               { text: 'NoInfer', link: '/ko/reference/built-in/NoInfer' },
-              { text: 'NonNullable', link: '/ko/reference/built-in/NonNullable' },
+              {
+                text: 'NonNullable',
+                link: '/ko/reference/built-in/NonNullable',
+              },
               { text: 'Omit', link: '/ko/reference/built-in/Omit' },
               { text: 'Parameters', link: '/ko/reference/built-in/Parameters' },
               { text: 'Partial', link: '/ko/reference/built-in/Partial' },
@@ -42,7 +51,10 @@ export default defineConfig({
               { text: 'Record', link: '/ko/reference/built-in/Record' },
               { text: 'Required', link: '/ko/reference/built-in/Required' },
               { text: 'ReturnType', link: '/ko/reference/built-in/ReturnType' },
-              { text: 'Uncapitalize', link: '/ko/reference/built-in/Uncapitalize' },
+              {
+                text: 'Uncapitalize',
+                link: '/ko/reference/built-in/Uncapitalize',
+              },
               { text: 'Uppercase', link: '/ko/reference/built-in/Uppercase' },
             ],
           },
@@ -52,6 +64,10 @@ export default defineConfig({
               { text: 'Falsy', link: '/ko/reference/basic/Falsy' },
               { text: 'Primitive', link: '/ko/reference/basic/Primitive' },
             ],
+          },
+          {
+            text: 'String',
+            items: [{ text: 'Split', link: '/ko/reference/string/Split' }],
           },
         ],
       },
