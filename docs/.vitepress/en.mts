@@ -27,10 +27,16 @@ export default defineConfig({
             items: [
               { text: 'Awaited', link: '/reference/built-in/Awaited' },
               { text: 'Capitalize', link: '/reference/built-in/Capitalize' },
-              { text: 'ConstructorParameters', link: '/reference/built-in/ConstructorParameters' },
+              {
+                text: 'ConstructorParameters',
+                link: '/reference/built-in/ConstructorParameters',
+              },
               { text: 'Exclude', link: '/reference/built-in/Exclude' },
               { text: 'Extract', link: '/reference/built-in/Extract' },
-              { text: 'InstanceType', link: '/reference/built-in/InstanceType' },
+              {
+                text: 'InstanceType',
+                link: '/reference/built-in/InstanceType',
+              },
               { text: 'Lowercase', link: '/reference/built-in/Lowercase' },
               { text: 'NoInfer', link: '/reference/built-in/NoInfer' },
               { text: 'NonNullable', link: '/reference/built-in/NonNullable' },
@@ -42,7 +48,10 @@ export default defineConfig({
               { text: 'Record', link: '/reference/built-in/Record' },
               { text: 'Required', link: '/reference/built-in/Required' },
               { text: 'ReturnType', link: '/reference/built-in/ReturnType' },
-              { text: 'Uncapitalize', link: '/reference/built-in/Uncapitalize' },
+              {
+                text: 'Uncapitalize',
+                link: '/reference/built-in/Uncapitalize',
+              },
               { text: 'Uppercase', link: '/reference/built-in/Uppercase' },
             ],
           },
@@ -52,6 +61,10 @@ export default defineConfig({
               { text: 'Falsy', link: '/reference/basic/Falsy' },
               { text: 'Primitive', link: '/reference/basic/Primitive' },
             ],
+          },
+          {
+            text: 'String',
+            items: [{ text: 'Split', link: '/reference/string/Split' }],
           },
         ],
       },
