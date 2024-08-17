@@ -15,4 +15,11 @@
  * For more information on primitive data types, see the [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)
  * @see https://developer.mozilla.org/en-US/docs/Glossary/Primitive
  */
-export type Primitive = string | number | boolean | bigint | symbol | null | undefined;
+export type Primitive =
+  | string
+  | number
+  | boolean
+  | bigint
+  | symbol
+  | null
+  | undefined;
