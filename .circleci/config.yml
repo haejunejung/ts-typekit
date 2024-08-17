@@ -1,0 +1,42 @@
+version: 2.1
+
+parameters:
+  pull_request:
+    type: boolean
+    default: false
+
+commands:
+  setup:
+    steps:
+      - run:
+          name: Install yarn
+          command: |
+            COREPACK_PATH=$HOME/.local/bin
+
+            mkdir -p $COREPACK_PATH
+            eval "$(echo PATH=$COREPACK_PATH:\$PATH | tee -a $BASH_ENV)"
+
+            corepack enable --install-directory $COREPACK_PATH
+            yarn install
+
+jobs:
+  check-peer:
+    docker:
+      - image: cimg/node:20.12
+    steps:
+      - checkout
+      - setup
+      - run:
+          name: Set execute permssion for scripts
+          command: chmod +x ./.scripts/check-peer.sh
+      - run:
+          name: Check Peer Dependency
+          command: ./.scripts/check-peer.sh || (echo "Peer Dependency 오류가 발생했습니다."; exit -1)
+
+workflows:
+  main:
+    jobs:
+      - check-peer:
+          filters:
+            branches:
+              ignore: main
