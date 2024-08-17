@@ -26,6 +26,12 @@ Our utilities are designed to be simple, clear, and easy to use, promoting a dec
 
 We prioritize comprehensive and accessible documentation, so developers can quickly understand and implement ts-typekit utilities with confidence.
 
+### ISSUE
+
+Before starting work on any contribution, please check the existing issues in the repository. If an issue already exists for what you plan to work on, please comment on that issue to indicate your interest in addressing it. If no related issue exists, please create a new one describing the problem or feature you intend to work on.
+
+This helps avoid duplication of effort and ensures that we can discuss and refine the approach before you begin coding.
+
 ### Pull Request
 
 When you raise your own pull request, the title of your pull request should match the following format. If you forget or are unsure how to do this, please refer to `.gitmessage.txt` in this repository.
