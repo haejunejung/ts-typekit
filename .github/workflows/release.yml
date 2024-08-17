@@ -9,7 +9,7 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v2
       - name: Install the dependencies
-        run: npm ci
+        run: yarn install
       - name: Initialize Git Config
         run: |
           git config --global user.email "jhj9422@unist.ac.kr"
