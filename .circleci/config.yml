@@ -20,6 +20,22 @@ commands:
             yarn install
 
 jobs:
+  test:
+    docker:
+      - image: cimg/node:20.12
+    steps:
+      - checkout
+      - setup
+      - run:
+          name: Run type check
+          command: yarn run test:tsc --noEmit
+      - run:
+          name: Run tsd
+          command: yarn run test:tsd
+      - run:
+          name: Run type-coverage
+          command: yarn run test:coverage
+
   check-peer:
     docker:
       - image: cimg/node:20.12
@@ -37,6 +53,11 @@ workflows:
   main:
     jobs:
       - check-peer:
+          filters:
+            branches:
+              ignore: main
+
+      - test:
           filters:
             branches:
               ignore: main
