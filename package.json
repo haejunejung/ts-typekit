@@ -11,7 +11,6 @@
     ]
   },
   "devDependencies": {
-    "@codechecks/client": "^0.1.12",
     "prettier": "^3.3.3",
     "release-it": "^17.6.0",
     "tsd": "^0.31.1",
