@@ -69,6 +69,7 @@ export default defineConfig({
             text: 'String',
             items: [
               { text: 'Replace', link: '/ko/reference/string/Replace' },
+              { text: 'ReplaceAll', link: '/ko/reference/string/ReplaceAll' },
               { text: 'Split', link: '/ko/reference/string/Split' },
             ],
           },
