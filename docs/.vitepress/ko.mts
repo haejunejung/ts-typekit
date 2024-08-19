@@ -67,7 +67,10 @@ export default defineConfig({
           },
           {
             text: 'String',
-            items: [{ text: 'Split', link: '/ko/reference/string/Split' }],
+            items: [
+              { text: 'Replace', link: '/ko/reference/string/Replace' },
+              { text: 'Split', link: '/ko/reference/string/Split' },
+            ],
           },
         ],
       },
