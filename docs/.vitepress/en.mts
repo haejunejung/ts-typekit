@@ -64,7 +64,10 @@ export default defineConfig({
           },
           {
             text: 'String',
-            items: [{ text: 'Split', link: '/reference/string/Split' }],
+            items: [
+              { text: 'Replace', link: '/reference/string/Replace' },
+              { text: 'Split', link: '/reference/string/Split' },
+            ],
           },
         ],
       },
