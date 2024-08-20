@@ -70,6 +70,10 @@ export default defineConfig({
               { text: 'Split', link: '/reference/string/Split' },
             ],
           },
+          {
+            text: 'Special',
+            items: [{ text: 'Brand', link: '/reference/special/Brand' }],
+          },
         ],
       },
     ],
