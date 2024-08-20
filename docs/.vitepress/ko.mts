@@ -73,6 +73,10 @@ export default defineConfig({
               { text: 'Split', link: '/ko/reference/string/Split' },
             ],
           },
+          {
+            text: 'Special',
+            items: [{ text: 'Brand', link: '/ko/reference/special/Brand' }],
+          },
         ],
       },
     ],
