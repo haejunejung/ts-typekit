@@ -13,6 +13,9 @@ type ParameterModifier = '?' | '*' | '+' | '';
 /**
  * @description
  * Extracts route optional parameters from a given Route pattern.
+ *
+ * @template {string} Route - The route pattern string.
+ * @template {string | number | boolean} ParamType - The type of the parameter values.
  */
 
 type ExtractRouteOptionalParam<
@@ -28,20 +31,29 @@ type ExtractRouteOptionalParam<
 
 /**
  * @description
- * Extracts route parameters from a given Route pattern and maps them to a specified type.
+ * Extract parameters from a route pattern, including handling parameter constraints and modifiers.
  *
- * This utility type takes a Route pattern as a string and returns an object type where the keys are
- * the dynamic segments of the Route (denoted by `:paramName`) and the values are of a specified type,
- * which is `ParamType`.
- * @template {string} Route - The Route pattern from which to extract route parameters.
- * @template {string | number | boolean} ParamType - The type to assign each extracted route parameters. Defaults to `string`.
+ * This type recursively parses a route string and extracts parameters, considering optional('?'),
+ * repeating('+', '*'), and required parameter modifiers.
+ *
+ * @template {string} Route - The route pattern string.
+ * @template {string | number | boolean} ParamType - The type of the parameter values.
  *
  * @example
- * type T0 = ExtractRouteParams<'/users/:userId/posts/:postId'>
+ * type T0 = ExtractRouteParams<'/users/:userId/posts/:postId'>;
  * // Result: { userId: string } & { postId: string }
  *
- * type T1 = ExtractRouteParams<'/users/:userId/posts/:postId', number>
- * // Result: { userId: number, postId: number }
+ * type T1 = ExtractRouteParams<'/users/:userId/posts/:postId', number>;
+ * // Result: { userId: number } & { postId: number }
+ *
+ * type T2 = ExtractRouteParams<'/users/:userId(\\d+)', number>;
+ * // Result: { userId: number }
+ *
+ * type T3 = ExtractRouteParams<'/search/:query+'>;
+ * // Result: { query: string }
+ *
+ * type T4 = ExtractRouteParams<'/items/:itemId/:category?'>
+ * // Result: { itemId: string } & { category?: string }
  */
 
 export type ExtractRouteParams<

@@ -74,6 +74,15 @@ export default defineConfig({
             text: 'Special',
             items: [{ text: 'Brand', link: '/reference/special/Brand' }],
           },
+          {
+            text: 'URL Parser',
+            items: [
+              {
+                text: 'ExtractRouteParams',
+                link: '/reference/url-parser/ExtractRouteParams',
+              },
+            ],
+          },
         ],
       },
     ],
