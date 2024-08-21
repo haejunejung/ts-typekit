@@ -78,6 +78,15 @@ export default defineConfig({
             text: 'Special',
             items: [{ text: 'Brand', link: '/ko/reference/special/Brand' }],
           },
+          {
+            text: 'URL Parser',
+            items: [
+              {
+                text: 'ExtractRouteParams',
+                link: '/reference/url-parser/ExtractRouteParams',
+              },
+            ],
+          },
         ],
       },
     ],
