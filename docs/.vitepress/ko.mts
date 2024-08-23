@@ -83,8 +83,14 @@ export default defineConfig({
             items: [
               {
                 text: 'ExtractRouteParams',
-                link: '/reference/url-parser/ExtractRouteParams',
+                link: '/ko/reference/url-parser/ExtractRouteParams',
               },
+            ],
+          },
+          {
+            text: 'Predicate',
+            items: [
+              { text: 'IsEqual', link: '/ko/reference/predicate/IsEqual' },
             ],
           },
         ],
