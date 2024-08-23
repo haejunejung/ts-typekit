@@ -83,7 +83,7 @@ export default defineConfig({
             items: [
               {
                 text: 'ExtractRouteParams',
-                link: '/reference/url-parser/ExtractRouteParams',
+                link: '/ko/reference/url-parser/ExtractRouteParams',
               },
             ],
           },
