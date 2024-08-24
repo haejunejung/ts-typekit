@@ -72,6 +72,7 @@ export default defineConfig({
               { text: 'Replace', link: '/ko/reference/string/Replace' },
               { text: 'ReplaceAll', link: '/ko/reference/string/ReplaceAll' },
               { text: 'Split', link: '/ko/reference/string/Split' },
+              { text: 'WithPrefix', link: '/ko/reference/string/WithPrefix' },
             ],
           },
           {
