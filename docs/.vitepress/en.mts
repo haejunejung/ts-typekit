@@ -98,6 +98,7 @@ export default defineConfig({
             items: [
               { text: 'IsArray', link: '/reference/predicate/IsArray' },
               { text: 'IsEqual', link: '/reference/predicate/IsEqual' },
+              { text: 'IsNever', link: '/reference/predicate/IsNever' },
             ],
           },
         ],
