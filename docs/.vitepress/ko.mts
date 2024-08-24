@@ -90,6 +90,7 @@ export default defineConfig({
           {
             text: 'Predicate',
             items: [
+              { text: 'IsArray', link: '/ko/reference/predicate/IsArray' },
               { text: 'IsEqual', link: '/ko/reference/predicate/IsEqual' },
             ],
           },
