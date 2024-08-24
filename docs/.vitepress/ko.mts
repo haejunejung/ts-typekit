@@ -67,6 +67,15 @@ export default defineConfig({
             ],
           },
           {
+            text: 'Utilities',
+            items: [
+              {
+                text: 'StrictOmit',
+                link: '/ko/reference/utilities/StrictOmit',
+              },
+            ],
+          },
+          {
             text: 'String',
             items: [
               { text: 'Replace', link: '/ko/reference/string/Replace' },
@@ -90,6 +99,7 @@ export default defineConfig({
           {
             text: 'Predicate',
             items: [
+              { text: 'IsArray', link: '/ko/reference/predicate/IsArray' },
               { text: 'IsEqual', link: '/ko/reference/predicate/IsEqual' },
               { text: 'IsNever', link: '/ko/reference/predicate/IsNever' },
             ],
