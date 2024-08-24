@@ -92,6 +92,7 @@ export default defineConfig({
             items: [
               { text: 'IsArray', link: '/ko/reference/predicate/IsArray' },
               { text: 'IsEqual', link: '/ko/reference/predicate/IsEqual' },
+              { text: 'IsTuple', link: '/ko/reference/predicate/IsTuple' },
             ],
           },
         ],
