@@ -67,6 +67,15 @@ export default defineConfig({
             ],
           },
           {
+            text: 'Utilities',
+            items: [
+              {
+                text: 'StrictOmit',
+                link: '/ko/reference/utilities/StrictOmit',
+              },
+            ],
+          },
+          {
             text: 'String',
             items: [
               { text: 'Replace', link: '/ko/reference/string/Replace' },
