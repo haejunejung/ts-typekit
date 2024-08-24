@@ -91,6 +91,7 @@ export default defineConfig({
             text: 'Predicate',
             items: [
               { text: 'IsEqual', link: '/ko/reference/predicate/IsEqual' },
+              { text: 'IsNever', link: '/ko/reference/predicate/IsNever' },
             ],
           },
         ],
