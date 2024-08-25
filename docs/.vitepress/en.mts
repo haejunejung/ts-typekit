@@ -67,6 +67,10 @@ export default defineConfig({
             text: 'Utilities',
             items: [
               {
+                text: 'Simplify',
+                link: '/reference/utilities/Simplify',
+              },
+              {
                 text: 'StrictOmit',
                 link: '/reference/utilities/StrictOmit',
               },
