@@ -73,6 +73,10 @@ export default defineConfig({
                 text: 'StrictOmit',
                 link: '/ko/reference/utilities/StrictOmit',
               },
+              {
+                text: 'StrictExclude',
+                link: '/ko/reference/utilities/StrictExclude',
+              },
             ],
           },
           {

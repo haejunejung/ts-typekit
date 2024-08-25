@@ -70,6 +70,10 @@ export default defineConfig({
                 text: 'StrictOmit',
                 link: '/reference/utilities/StrictOmit',
               },
+              {
+                text: 'StrictExclude',
+                link: '/reference/utilities/StrictExclude',
+              },
             ],
           },
           {
