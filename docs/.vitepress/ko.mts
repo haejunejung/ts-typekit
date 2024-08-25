@@ -70,6 +70,10 @@ export default defineConfig({
             text: 'Utilities',
             items: [
               {
+                text: 'Simplify',
+                link: '/ko/reference/utilities/Simplify',
+              },
+              {
                 text: 'StrictOmit',
                 link: '/ko/reference/utilities/StrictOmit',
               },
