@@ -82,6 +82,7 @@ export default defineConfig({
               { text: 'Replace', link: '/reference/string/Replace' },
               { text: 'ReplaceAll', link: '/reference/string/ReplaceAll' },
               { text: 'Split', link: '/reference/string/Split' },
+              { text: 'WithPrefix', link: '/reference/string/WithPrefix' },
             ],
           },
           {
