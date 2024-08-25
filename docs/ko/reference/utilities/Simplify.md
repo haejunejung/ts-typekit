@@ -18,6 +18,8 @@ type Simplify<T> = { [Key in keyof T]: T[Key] } & {};
 
 ## 예제
 
+#### 예제 #1
+
 ```ts
 type Crendentials = {
   email: string;
