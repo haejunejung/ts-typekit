@@ -67,6 +67,10 @@ export default defineConfig({
             text: 'Utilities',
             items: [
               {
+                text: 'PickOptional',
+                link: '/reference/utilities/PickOptional',
+              },
+              {
                 text: 'Simplify',
                 link: '/reference/utilities/Simplify',
               },
