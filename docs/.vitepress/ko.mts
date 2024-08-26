@@ -78,12 +78,16 @@ export default defineConfig({
                 link: '/ko/reference/utilities/Simplify',
               },
               {
-                text: 'StrictOmit',
-                link: '/ko/reference/utilities/StrictOmit',
-              },
-              {
                 text: 'StrictExclude',
                 link: '/ko/reference/utilities/StrictExclude',
+              },
+              {
+                text: 'StrictExtract',
+                link: '/ko/reference/utilities/StrictExtract',
+              },
+              {
+                text: 'StrictOmit',
+                link: '/ko/reference/utilities/StrictOmit',
               },
             ],
           },
