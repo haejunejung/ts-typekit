@@ -64,11 +64,29 @@ export default defineConfig({
             ],
           },
           {
+            text: 'Utilities',
+            items: [
+              {
+                text: 'Simplify',
+                link: '/reference/utilities/Simplify',
+              },
+              {
+                text: 'StrictOmit',
+                link: '/reference/utilities/StrictOmit',
+              },
+              {
+                text: 'StrictExclude',
+                link: '/reference/utilities/StrictExclude',
+              },
+            ],
+          },
+          {
             text: 'String',
             items: [
               { text: 'Replace', link: '/reference/string/Replace' },
               { text: 'ReplaceAll', link: '/reference/string/ReplaceAll' },
               { text: 'Split', link: '/reference/string/Split' },
+              { text: 'WithPrefix', link: '/reference/string/WithPrefix' },
             ],
           },
           {
@@ -90,6 +108,7 @@ export default defineConfig({
               { text: 'IsArray', link: '/reference/predicate/IsArray' },
               { text: 'IsEqual', link: '/reference/predicate/IsEqual' },
               { text: 'IsTuple', link: '/reference/predicate/IsTuple' },
+              { text: 'IsNever', link: '/reference/predicate/IsNever' },
             ],
           },
         ],
