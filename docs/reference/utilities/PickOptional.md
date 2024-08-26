@@ -12,6 +12,9 @@ type PickOptional<T, K extends keyof T> = Simplify<
 >;
 ```
 
+ - **T** - The original type from which keys are being picked.
+ - **K** - The keys from the original type `T` that should be made optional.
+
 ## Examples
 
 #### Example #1
