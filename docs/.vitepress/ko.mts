@@ -70,6 +70,18 @@ export default defineConfig({
             text: 'Utilities',
             items: [
               {
+                text: 'PickOptional',
+                link: '/ko/reference/utilities/PickOptional',
+              },
+              {
+                text: 'Simplify',
+                link: '/ko/reference/utilities/Simplify',
+              },
+              {
+                text: 'StrictExclude',
+                link: '/ko/reference/utilities/StrictExclude',
+              },
+              {
                 text: 'StrictExtract',
                 link: '/ko/reference/utilities/StrictExtract',
               },
@@ -85,6 +97,7 @@ export default defineConfig({
               { text: 'Replace', link: '/ko/reference/string/Replace' },
               { text: 'ReplaceAll', link: '/ko/reference/string/ReplaceAll' },
               { text: 'Split', link: '/ko/reference/string/Split' },
+              { text: 'WithPrefix', link: '/ko/reference/string/WithPrefix' },
             ],
           },
           {
@@ -103,8 +116,11 @@ export default defineConfig({
           {
             text: 'Predicate',
             items: [
+              { text: 'IsAny', link: '/ko/reference/predicate/IsAny' },
               { text: 'IsArray', link: '/ko/reference/predicate/IsArray' },
               { text: 'IsEqual', link: '/ko/reference/predicate/IsEqual' },
+              { text: 'IsTuple', link: '/ko/reference/predicate/IsTuple' },
+              { text: 'IsNever', link: '/ko/reference/predicate/IsNever' },
             ],
           },
         ],
