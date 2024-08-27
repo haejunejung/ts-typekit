@@ -6,9 +6,6 @@ hero:
   text: 'A Collection of TypeScript Utility Types'
   actions:
     - theme: brand
-      text: What is ts-typekit
-      link: /what-is-ts-typekit
-    - theme: alt
       text: Reference
       link: /reference/built-in/Awaited
 
