@@ -1,4 +1,5 @@
 <p align="center">
+  <img src="/assets/logo.png" alt="ts-typekit" height=300 />
   <h1 align="center">ts-typekit</h1>
   <p align="center">🧰 Collection of TypeScript utility types</p>
   <p align="center">
@@ -11,13 +12,13 @@
   </p>
 </p>
 
-- **No Runtime Cost**: `ts-typekit` operates exclusively at compile-time, meaning it introduces zero overhead to your runtime performance.
+- **No Runtime Cost**: ts-typekit operates exclusively at compile-time, meaning it introduces zero overhead to your runtime performance.
 
-- **Battle-tested**: All utility types within `ts-typekit` are rigorously tested using `tsd`, providing you with confidence and reliability in their usage.
+- **Battle-tested**: All utility types within ts-typekit are rigorously tested using tsd, providing you with confidence and reliability in their usage.
 
-- **Type Safety**: By leveraging `ts-typekit`, you can enforce stricter type checks, reducing the likelihood of type-related errors and improving the overall robustness of your TypeScript applications.
+- **Type Safety**: By leveraging ts-typekit, you can enforce stricter type checks, reducing the likelihood of type-related errors and improving the overall robustness of your TypeScript applications.
 
-Whether you're dealing with complex type transformations, conditional types, or need to enforce specific type constraints, `ts-typekit` has you covered with a growing collection of utility types that cater to a variety of common and advanced use cases.
+Whether you're dealing with complex type transformations, conditional types, or need to enforce specific type constraints, ts-typekit has you covered with a growing collection of utility types that cater to a variety of common and advanced use cases.
 
 ## Contributing
 
