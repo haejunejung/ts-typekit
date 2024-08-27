@@ -7,18 +7,10 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/what-is-ts-typekit' },
       { text: 'Reference', link: '/reference/built-in/Awaited' },
     ],
 
     sidebar: [
-      {
-        text: 'Introduction',
-        items: [
-          { text: 'What is ts-typekit?', link: '/what-is-ts-typekit' },
-          { text: 'Getting Started', link: '/getting-started' },
-        ],
-      },
       {
         text: 'Reference',
         items: [
@@ -27,18 +19,9 @@ export default defineConfig({
             items: [
               { text: 'Awaited', link: '/reference/built-in/Awaited' },
               { text: 'Capitalize', link: '/reference/built-in/Capitalize' },
-              {
-                text: 'ConstructorParameters',
-                link: '/reference/built-in/ConstructorParameters',
-              },
               { text: 'Exclude', link: '/reference/built-in/Exclude' },
               { text: 'Extract', link: '/reference/built-in/Extract' },
-              {
-                text: 'InstanceType',
-                link: '/reference/built-in/InstanceType',
-              },
               { text: 'Lowercase', link: '/reference/built-in/Lowercase' },
-              { text: 'NoInfer', link: '/reference/built-in/NoInfer' },
               { text: 'NonNullable', link: '/reference/built-in/NonNullable' },
               { text: 'Omit', link: '/reference/built-in/Omit' },
               { text: 'Parameters', link: '/reference/built-in/Parameters' },

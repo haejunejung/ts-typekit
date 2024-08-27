@@ -12,10 +12,6 @@ The `Awaited<Type>` utility type is available starting from TypeScript version 4
 
 It takes one type parameter, which is the `Type` representing the `Promise` from which you want to extract the resolved type.
 
-```ts
-type NewType = Awaited<Type>;
-```
-
 ## Examples
 
 #### Example #1
