@@ -12,10 +12,10 @@ unintended omissions of non-existent keys.
 ## Syntax
 
 ```ts
-type StrictOmit<
-  ObjectType extends object,
-  ExcludedKeys extends keyof ObjectType,
-> = Pick<ObjectType, Exclude<keyof ObjectType, ExcludedKeys>>;
+type StrictOmit<ObjectType, ExcludedKeys extends keyof ObjectType> = Omit<
+  ObjectType,
+  ExcludedKeys
+>;
 ```
 
 - **ObjectType**: The type from which properties will be omitted.
