@@ -7,7 +7,7 @@
  * This provides a more controlled and predictable type manipulation, preventing
  * unintended omissions of non-existent keys.
  *
- * @template {object} ObjectType - The type from which properties will be omitted.
+ * @template ObjectType - The type from which properties will be omitted.
  * @template ExcludedKeys - The keys to be omitted, which must be present in `ObjectType`.
  *
  * @returns
@@ -30,6 +30,6 @@
  * // Type '"noexistent"' is not assignable to type 'keyof Example'.
  */
 export type StrictOmit<
-  ObjectType extends object,
+  ObjectType,
   ExcludedKeys extends keyof ObjectType,
-> = Pick<ObjectType, Exclude<keyof ObjectType, ExcludedKeys>>;
+> = Omit<ObjectType, ExcludedKeys>;

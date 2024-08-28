@@ -9,10 +9,10 @@
 ## 문법
 
 ```ts
-type StrictOmit<
-  ObjectType extends object,
-  ExcludedKeys extends keyof ObjectType,
-> = Pick<ObjectType, Exclude<keyof ObjectType, ExcludedKeys>>;
+type StrictOmit<ObjectType, ExcludedKeys extends keyof ObjectType> = Omit<
+  ObjectType,
+  ExcludedKeys
+>;
 ```
 
 - **ObjectType**: 속성이 생략될 타입이에요.
