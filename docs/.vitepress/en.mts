@@ -54,6 +54,10 @@ export default defineConfig({
                 link: '/reference/utilities/PickOptional',
               },
               {
+                text: 'PickRequired',
+                link: '/reference/utilities/PickRequired',
+              },
+              {
                 text: 'Simplify',
                 link: '/reference/utilities/Simplify',
               },
