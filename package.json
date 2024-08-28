@@ -32,7 +32,9 @@
     "typescript",
     "ts",
     "tsd",
-    "types"
+    "types",
+    "utility",
+    "utility-types"
   ],
   "types": "./index.d.ts",
   "publishConfig": {
