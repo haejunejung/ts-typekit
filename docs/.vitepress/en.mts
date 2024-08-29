@@ -105,6 +105,7 @@ export default defineConfig({
               { text: 'IsEqual', link: '/reference/predicate/IsEqual' },
               { text: 'IsTuple', link: '/reference/predicate/IsTuple' },
               { text: 'IsNever', link: '/reference/predicate/IsNever' },
+              { text: 'IsUnknown', link: '/reference/predicate/IsUnknown' },
             ],
           },
         ],

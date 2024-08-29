@@ -108,6 +108,7 @@ export default defineConfig({
               { text: 'IsEqual', link: '/ko/reference/predicate/IsEqual' },
               { text: 'IsTuple', link: '/ko/reference/predicate/IsTuple' },
               { text: 'IsNever', link: '/ko/reference/predicate/IsNever' },
+              { text: 'IsUnknown', link: '/ko/reference/predicate/IsUnknown' },
             ],
           },
         ],
