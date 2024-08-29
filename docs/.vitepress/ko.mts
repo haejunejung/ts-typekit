@@ -50,6 +50,43 @@ export default defineConfig({
             ],
           },
           {
+            text: 'Map',
+            items: [{ text: 'MapKeys', link: '/ko/reference/map/MapKeys' }],
+          },
+          {
+            text: 'Predicate',
+            items: [
+              { text: 'IsAny', link: '/ko/reference/predicate/IsAny' },
+              { text: 'IsArray', link: '/ko/reference/predicate/IsArray' },
+              { text: 'IsEqual', link: '/ko/reference/predicate/IsEqual' },
+              { text: 'IsTuple', link: '/ko/reference/predicate/IsTuple' },
+              { text: 'IsNever', link: '/ko/reference/predicate/IsNever' },
+              { text: 'IsUnknown', link: '/ko/reference/predicate/IsUnknown' },
+            ],
+          },
+          {
+            text: 'Special',
+            items: [{ text: 'Brand', link: '/ko/reference/special/Brand' }],
+          },
+          {
+            text: 'String',
+            items: [
+              { text: 'Replace', link: '/ko/reference/string/Replace' },
+              { text: 'ReplaceAll', link: '/ko/reference/string/ReplaceAll' },
+              { text: 'Split', link: '/ko/reference/string/Split' },
+              { text: 'WithPrefix', link: '/ko/reference/string/WithPrefix' },
+            ],
+          },
+          {
+            text: 'URL Parser',
+            items: [
+              {
+                text: 'ExtractRouteParams',
+                link: '/ko/reference/url-parser/ExtractRouteParams',
+              },
+            ],
+          },
+          {
             text: 'Utilities',
             items: [
               {
@@ -76,39 +113,6 @@ export default defineConfig({
                 text: 'StrictOmit',
                 link: '/ko/reference/utilities/StrictOmit',
               },
-            ],
-          },
-          {
-            text: 'String',
-            items: [
-              { text: 'Replace', link: '/ko/reference/string/Replace' },
-              { text: 'ReplaceAll', link: '/ko/reference/string/ReplaceAll' },
-              { text: 'Split', link: '/ko/reference/string/Split' },
-              { text: 'WithPrefix', link: '/ko/reference/string/WithPrefix' },
-            ],
-          },
-          {
-            text: 'Special',
-            items: [{ text: 'Brand', link: '/ko/reference/special/Brand' }],
-          },
-          {
-            text: 'URL Parser',
-            items: [
-              {
-                text: 'ExtractRouteParams',
-                link: '/ko/reference/url-parser/ExtractRouteParams',
-              },
-            ],
-          },
-          {
-            text: 'Predicate',
-            items: [
-              { text: 'IsAny', link: '/ko/reference/predicate/IsAny' },
-              { text: 'IsArray', link: '/ko/reference/predicate/IsArray' },
-              { text: 'IsEqual', link: '/ko/reference/predicate/IsEqual' },
-              { text: 'IsTuple', link: '/ko/reference/predicate/IsTuple' },
-              { text: 'IsNever', link: '/ko/reference/predicate/IsNever' },
-              { text: 'IsUnknown', link: '/ko/reference/predicate/IsUnknown' },
             ],
           },
         ],
