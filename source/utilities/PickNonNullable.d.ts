@@ -2,11 +2,11 @@ import { Simplify } from './Simplify';
 
 /**
  * @description
- * Creates a new type where the specified keys are made non-nullable,
- * while keeping the rest of the type remain unchanged.
+ * Creates a new type by converting the selected keys to NonNullable to remove null and undefined,
+ * while keeping the rest of the type unchanged.
  *
  * @template T - The original type from which keys are being picked.
- * @template K - The keys from the original type `T` that should be made non-nullable.
+ * @template K - The keys of the `T` to which NonNullable will be applied.
  *
  * @returns - A new type with keys in K made non-nullable.
  *

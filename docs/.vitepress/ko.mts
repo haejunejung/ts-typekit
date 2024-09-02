@@ -90,6 +90,10 @@ export default defineConfig({
             text: 'Utilities',
             items: [
               {
+                text: 'PickNonNullable',
+                link: '/ko/reference/utilities/PickNonNullable',
+              },
+              {
                 text: 'PickOptional',
                 link: '/ko/reference/utilities/PickOptional',
               },

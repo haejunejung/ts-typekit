@@ -87,6 +87,10 @@ export default defineConfig({
             text: 'Utilities',
             items: [
               {
+                text: 'PickNonNullable',
+                link: '/reference/utilities/PickNonNullable',
+              },
+              {
                 text: 'PickOptional',
                 link: '/reference/utilities/PickOptional',
               },
