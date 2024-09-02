@@ -48,7 +48,10 @@ export default defineConfig({
           },
           {
             text: 'Map',
-            items: [{ text: 'MapKeys', link: '/reference/map/MapKeys' }],
+            items: [
+              { text: 'MapKeys', link: '/reference/map/MapKeys' },
+              { text: 'MapValues', link: '/reference/map/MapValues' },
+            ],
           },
           {
             text: 'Predicate',

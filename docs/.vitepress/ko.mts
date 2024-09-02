@@ -51,7 +51,10 @@ export default defineConfig({
           },
           {
             text: 'Map',
-            items: [{ text: 'MapKeys', link: '/ko/reference/map/MapKeys' }],
+            items: [
+              { text: 'MapKeys', link: '/ko/reference/map/MapKeys' },
+              { text: 'MapValues', link: '/ko/reference/map/MapValues' },
+            ],
           },
           {
             text: 'Predicate',
