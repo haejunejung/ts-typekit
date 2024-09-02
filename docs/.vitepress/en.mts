@@ -91,6 +91,10 @@ export default defineConfig({
                 link: '/reference/utilities/PickOptional',
               },
               {
+                text: 'PickReadonly',
+                link: '/reference/utilities/PickReadonly',
+              },
+              {
                 text: 'PickRequired',
                 link: '/reference/utilities/PickRequired',
               },
