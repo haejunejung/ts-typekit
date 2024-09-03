@@ -42,6 +42,15 @@ export default defineConfig({
             ],
           },
           {
+            text: 'Array',
+            items: [
+              {
+                text: 'NonEmptyArray',
+                link: '/ko/reference/array/NonEmptyArray',
+              },
+            ],
+          },
+          {
             text: 'Basic',
             items: [
               { text: 'Falsy', link: '/ko/reference/basic/Falsy' },

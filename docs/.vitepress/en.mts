@@ -39,6 +39,12 @@ export default defineConfig({
             ],
           },
           {
+            text: 'Array',
+            items: [
+              { text: 'NonEmptyArray', link: '/reference/array/NonEmptyArray' },
+            ],
+          },
+          {
             text: 'Basic',
             items: [
               { text: 'Falsy', link: '/reference/basic/Falsy' },
