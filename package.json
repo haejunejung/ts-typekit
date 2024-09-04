@@ -1,6 +1,6 @@
 {
   "name": "ts-typekit",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "A Collection of TypeScript Utility Types",
   "license": "MIT",
   "packageManager": "yarn@4.4.0",
