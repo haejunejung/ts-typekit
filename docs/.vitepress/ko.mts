@@ -133,6 +133,10 @@ export default defineConfig({
                 text: 'StrictOmit',
                 link: '/ko/reference/utilities/StrictOmit',
               },
+              {
+                text: 'TupleToUnion',
+                link: '/ko/reference/utilities/TupleToUnion',
+              },
             ],
           },
         ],
