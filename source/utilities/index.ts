@@ -6,3 +6,4 @@ export type { Simplify } from './Simplify';
 export type { StrictExclude } from './StrictExclude';
 export type { StrictExtract } from './StrictExtract';
 export type { StrictOmit } from './StrictOmit';
+export type { TupleToUnion } from './TupleToUnion';

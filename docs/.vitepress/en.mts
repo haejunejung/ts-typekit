@@ -127,6 +127,10 @@ export default defineConfig({
                 text: 'StrictOmit',
                 link: '/reference/utilities/StrictOmit',
               },
+              {
+                text: 'TupleToUnion',
+                link: '/reference/utilities/TupleToUnion',
+              },
             ],
           },
         ],
