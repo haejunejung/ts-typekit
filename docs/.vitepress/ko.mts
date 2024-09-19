@@ -118,6 +118,10 @@ export default defineConfig({
                 link: '/ko/reference/utilities/PickRequired',
               },
               {
+                text: 'PickWritable',
+                link: '/ko/reference/utilities/PickWritable',
+              },
+              {
                 text: 'Simplify',
                 link: '/ko/reference/utilities/Simplify',
               },
