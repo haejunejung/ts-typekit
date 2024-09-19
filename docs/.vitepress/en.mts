@@ -112,6 +112,10 @@ export default defineConfig({
                 link: '/reference/utilities/PickRequired',
               },
               {
+                text: 'PickWritable',
+                link: '/reference/utilities/PickWritable',
+              },
+              {
                 text: 'Simplify',
                 link: '/reference/utilities/Simplify',
               },
