@@ -2,7 +2,7 @@ import { Simplify } from './Simplify';
 
 /**
  * @description
- * Creates a new type where exactly one of the specified keys is maed required,
+ * Creates a new type where exactly one of the specified keys is made required,
  * and the other specified keys are set to never, while keeping the rest of the type unchanged.
  *
  * @template T - The original type from which keys are being picked.
