@@ -135,6 +135,10 @@ export default defineConfig({
                 text: 'TupleToUnion',
                 link: '/reference/utilities/TupleToUnion',
               },
+              {
+                text: 'UnionToIntersection',
+                link: '/reference/utilities/UnionToIntersection',
+              },
             ],
           },
         ],
