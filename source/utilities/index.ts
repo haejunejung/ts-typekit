@@ -9,3 +9,4 @@ export type { StrictExclude } from './StrictExclude';
 export type { StrictExtract } from './StrictExtract';
 export type { StrictOmit } from './StrictOmit';
 export type { TupleToUnion } from './TupleToUnion';
+export type { UnionToIntersection } from './UnionToIntersection';

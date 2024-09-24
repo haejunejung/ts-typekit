@@ -146,6 +146,10 @@ export default defineConfig({
                 text: 'TupleToUnion',
                 link: '/ko/reference/utilities/TupleToUnion',
               },
+              {
+                text: 'UnionToIntersection',
+                link: '/ko/reference/utilities/UnionToIntersection',
+              },
             ],
           },
         ],
