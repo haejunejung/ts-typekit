@@ -123,6 +123,10 @@ export default defineConfig({
                 link: '/ko/reference/utilities/PickWritable',
               },
               {
+                text: 'RequiredExactlyOne',
+                link: '/ko/reference/utilities/RequiredExactlyOne',
+              },
+              {
                 text: 'Simplify',
                 link: '/ko/reference/utilities/Simplify',
               },

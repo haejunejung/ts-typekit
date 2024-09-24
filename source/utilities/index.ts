@@ -3,6 +3,7 @@ export type { PickOptional } from './PickOptional';
 export type { PickReadonly } from './PickReadonly';
 export type { PickRequired } from './PickRequired';
 export type { PickWritable } from './PickWritable';
+export type { RequiredExactlyOne } from './RequiredExactlyOne';
 export type { Simplify } from './Simplify';
 export type { StrictExclude } from './StrictExclude';
 export type { StrictExtract } from './StrictExtract';
